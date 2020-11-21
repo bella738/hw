@@ -1,0 +1,8 @@
+---
+# tasks file for hw
+- hosts: all
+  become: yes
+  tasks:
+    - name: install
+      apt: name=vim state=latest name=zip state=latest
+
